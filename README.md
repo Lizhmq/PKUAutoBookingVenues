@@ -35,7 +35,7 @@ PKU智慧场馆自动预约工具
 采用如下命令安装 `selenium`，支持 2.48.0 及以上版本：
 
 ```python
-pip3 install selenium==2.48.0
+pip3 install selenium==3.8.0
 ```
 
 ## 基本用法
@@ -54,13 +54,9 @@ pip3 install selenium==2.48.0
 
 本项目中的 `autoRun.bat` 文件可提供在静默免打扰情况下运行程序的选择，配合 Windows 任务计划管理可实现定期自动填报，具体请参考[Win10下定时启动程序或脚本](https://blog.csdn.net/xielifu/article/details/81016220)
 
-### mac OS
-
-进入项目根目录，以命令 `./macAutoRun.sh` 执行 `macAutoRun.sh` 脚本即可，可设定或取消定时运行
-
-### Linux
-
-使用 `crontab` 设置
+### mac OS / Linux
+Execute: python main.py
+Execute periodicly: chmod +x macAutoRun.sh && ./macAutoRun.sh
 
 **Note:** 静默运行的弊端为无法看到任何报错信息，若程序运行有错误，使用者很难得知。故建议采用定时静默运行时，设置微信推送，在移动端即可查看到备案成功信息。
 
